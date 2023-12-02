@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+}
+
+.primary-bg-gradient-color {
+  background: rgb(0, 191, 255);
+  background: linear-gradient(
+    338deg,
+    rgba(0, 191, 255, 1) 26%,
+    rgba(78, 226, 237, 1) 58%
+  );
+}
+
+.primary-bg-color {
+  background-color: #00bfff;
+}
+
+.primary-text-color {
+  color: #00bfff;
+}
+
+.header-bottom-design::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-bottom: dotted 3px rgb(150, 146, 146);
+  transform: translateX(-50%);
+}
+
+.header-bottom-design-l50::before {
+  width: 5%;
+  left: 50%;
+}
+
+.header-bottom-design-l0::before {
+  width: 20%;
+  left: 10%;
+}
+
+.header-bottom-design-w80::before {
+  width: 20%;
+  left: 50%;
+  border-bottom: dotted 6px #00bfff;
+}
+
+.home-sec nav {
+  transition: background-color linear 0.3s;
+}
+
+.home-sec nav.sticking {
+  background-color: white;
+  box-shadow: 0 0 4px rgba(137, 136, 136, 0.597);
+}
+
+.home-sec nav.sticking ul li a,
+.home-sec nav.sticking a {
+  color: black;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  transition: all 0.1s linear;
+}
+
+nav ul li a:hover,
+nav.sticking ul li a:hover {
+  color: #00bfff;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0%;
+  background-color: red;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+  height: 3px;
+}
+
+.home-sec {
+  background-image: url(../assets/img/bg/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  /* height: calc(100vh - 80px); */
+}
+
+.hero-section div {
+  /* width: 70%; */
+}
+
+.sec-2 ul {
+}
+
+.sec-2 ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* width: calc(4 / 100%); */
+  width: 25%;
+}
+
+.sec-2 ul li {
+  background-color: #00bfff;
+}
+
+.sec-2 ul li:nth-child(1) {
+  background-color: #00bfff;
+}
+
+.sec-2 ul li:nth-child(2) {
+  background-color: #032d60;
+}
+
+.sec-2 ul li:nth-child(3) {
+  background-color: #2aa56e;
+}
+
+.sec-2 ul li:nth-child(4) {
+  background-color: #f44988;
+}
+
+.sec-3 .col-2 img {
+  box-shadow: 20px 40px 30px rgba(180, 180, 182, 0.192),
+    -40px 40px 30px rgba(180, 180, 182, 0.192);
+}
+
+.sec-3 .col-2 figure + img:last-child {
+  transform: rotate(21deg);
+}
+
+.sec-5 .col-1 {
+  /* aspect-ratio: 0;
+  margin: auto; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.sec-5 .col-1::before {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/img/morphis-glass-disc-shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 400px;
+  top: 0;
+  z-index: -1;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.sec-7 {
+  background-color: #25273a;
+}
+
+.sec-7 > ul.cards-container li.cards {
+  transition: 0.2s all linear;
+}
+
+.sec-7 > ul.cards-container li.cards:hover {
+  background-color: #00bfff;
+}
+
+.sec-7 > ul.cards-container li.cards:hover .header-bottom-design::before {
+  border-color: white;
+}
+
+.sec-7 > ul.cards-container li.cards:hover .header-bottom-design::before {
+  border-color: white;
+}
+
+/* .sec-7 > ul.cards-container li.cards:hover:has(h2, p, ul li) {
+  color: white;
+} */
+
+ul.cards-container li.cards:hover h2,
+ul.cards-container li.cards:hover p,
+ul.cards-container li.cards:hover ul li {
+  color: white;
+}
+
+.sec-8 {
+  background-image: linear-gradient(
+      rgba(102, 102, 99, 0.5),
+      rgba(102, 102, 99, 0.5)
+    ),
+    url(../assets/img/bg/testimonial-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* background-color: #ffff00; */
+}
+
+#backToTopBtn {
+  transition: 0.5s;
+}
